@@ -24,10 +24,10 @@ public class MoodService implements MoodInterface {
 		int randomIndex = new Random().nextInt(moods.length);
 		return moods[randomIndex];
 	}
-	
+
 	public String getReason(Mood mood) {
 		String reason = null;
-		switch(mood.getFeeling()) {
+		switch (mood.getFeeling()) {
 		case "Happy":
 			reason = "I just rode a unicorn!";
 			break;

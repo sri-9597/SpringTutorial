@@ -2,7 +2,7 @@ package edu.asu.diging.tutorial.spring.domain;
 
 public class Mood {
 	private String feeling;
-	
+
 	public Mood(String mood) {
 		feeling = mood;
 	}
