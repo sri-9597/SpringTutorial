@@ -25,27 +25,4 @@ public class MoodService implements MoodInterface {
 		return moods[randomIndex];
 	}
 
-	public String getReason(Mood mood) {
-		String reason = null;
-		switch (mood.getFeeling()) {
-		case "Happy":
-			reason = "I just rode a unicorn!";
-			break;
-		case "Sad":
-			reason = "My Unicorn just died :(";
-			break;
-		case "Frustrated":
-			reason = "I can't get my code to work!";
-			break;
-		case "Tired":
-			reason = "I just walked for 10 miles!";
-			break;
-		case "Angry":
-			reason = "My roommate went out without me";
-			break;
-		default:
-			reason = "Really no reason at all! I just feel this way today";
-		}
-		return reason;
-	}
 }
